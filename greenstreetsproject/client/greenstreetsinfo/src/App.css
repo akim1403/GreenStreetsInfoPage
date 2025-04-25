@@ -1,0 +1,391 @@
+
+  @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&display=swap');
+
+*{
+  margin:	0% 0% 0% 0%;
+  padding: 0;
+}
+
+.App-header {
+  background-color: #F6FDE7;
+  min-height: 8vh;
+  max-height: 8vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  font-size: min(calc(2px + 2vw), 15px);
+  
+}
+
+.Menu-bar {
+  padding-left: 5%;
+  padding-right: 5%;
+  display: flex;
+  justify-content: space-between;
+  width:50%;
+}
+
+.Logo {
+  max-height: 20vh;
+  padding-left: 3%;
+  cursor: pointer;
+}
+
+.Menu-bar a {
+  color: rgb(1, 41, 1);
+  font-weight: 500;
+  font-family: 'Lato';
+}
+
+.language-switch {
+  width:20%;
+  border-radius: 30px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-left: 3%;
+  display:flex;
+  justify-content: center;
+  cursor: pointer; /* Add cursor style to indicate interactivity */
+}
+.language-switch a {
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.language-switch p {
+  padding-left: 2%;
+  padding-right: 2%;
+}
+
+.EN:hover {
+  color:rgb(8, 221, 58);
+}
+
+.CN:hover {
+  color:rgb(8, 221, 58);
+}
+
+.menu-item {
+  text-align: center;
+  width:20%;
+  border-radius: 30px;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  cursor: pointer; /* Add cursor style to indicate interactivity */
+}
+.menu-item:hover {
+  background-color:#33691e
+}
+.menu-item:hover a{
+  color:rgb(255, 255, 255);
+}
+.menu-item a {
+  transition: background-color 0.3s;
+  text-decoration: none;
+}
+.ContentWrapper {
+  position: relative;
+}
+
+.HomePageImageContainer {
+  position: relative;
+  height: calc(100vh - 8vh); /* Adjust as needed */
+}
+.SetUpImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.5;
+  display: block; /* Make sure the image doesn't have extra spacing */
+  margin: 0 auto; 
+}
+
+.aboutUsImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.7;
+}
+
+.settings {
+  padding-top: 5%;
+  max-height: 15vh;
+}
+
+.HomePageImage {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.67;
+}
+.findOutMore {
+  margin-top:5%;
+  width:45%;
+  background-color: #F6FDE7;
+  text-align: center;
+  border-radius: 30px;
+}
+.findOutMore:hover {
+  cursor: pointer;
+  background-color: #33691e
+}
+.findOutMore:hover p {
+  color: rgb(255, 255, 255); /* Text color on hover */
+}
+.findOutMore p{
+  padding-top: 2%;
+  padding-bottom: 4%;
+  font-size: min(calc(5px + 2vw), 20px); 
+  color: rgb(0, 0, 0); /* Or any other color you prefer */
+}
+
+.ImageText {
+  text-shadow: 2px 2px #33691e;
+  font-family: 'Lato';
+  font-size: min(calc(12px + 2vw), 30px); 
+  color: rgb(255, 255, 255); /* Or any other color you prefer */
+}
+
+.ImageCaption {
+  padding-left: 5%;
+  position: absolute;
+  bottom: 0;
+  top: 50%;
+  left: 0;
+}
+
+.SetUpImageText {
+  padding-top: 5%;
+  font-family: 'Lato';
+  font-size: min(calc(10px + 1.2vw), 20px); 
+  color: #0d2216; /* Or any other color you prefer */
+}
+
+.SetUpImageTitle {
+  text-align: center;
+  font-family: 'Lato';
+  font-size: min(calc(12px + 2vw), 30px); 
+  color: #0d2216; /* Or any other color you prefer */
+}
+.SetUpImageCaption {
+  position: absolute;
+  text-align: center;
+  padding-left: 20%;
+  padding-right: 20%;
+  bottom: 0;
+  top: 30%;
+  width: 100%; /* Set the width to 100% to span the entire container */
+  box-sizing: border-box; 
+}
+.SetUpImageCaption p {
+  margin: 0; /* Remove default margin */
+}
+.HomePageInfo {
+  background-color: #F6FDE7;
+  color: rgb(4, 73, 4);
+  padding-bottom: 5%;
+}
+
+.App-link {
+  color: #61dafb;
+}
+.Mission {
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-right: 10%;
+}
+.settingList li {
+  padding-top: 3%;
+}
+.MissionInfo {
+  display: flex;
+}
+.MissionInfo h2 {
+  font-size: min(calc(10px + 2vw), 25px); 
+}
+.MissionMainR {
+  padding-left: 5%;
+}
+
+.topicText {
+  padding-top: 5%;
+  flex: 1; /* Take up remaining space */
+  text-align: left;
+  font-size: min(calc(2px + 2vw), 18px); 
+}
+.settingList {
+  padding-top: 5%;
+  flex: 1; /* Take up remaining space */
+  text-align: left;
+  font-size: min(calc(2px + 2vw), 18px); 
+}
+.missionImage {
+  width: 50%;
+  flex: 0;
+  max-width: 800px;
+  border: 2px solid #33691e;
+  border-radius: 30px;
+}
+
+.MissionMain{
+  flex: 1;
+  width: 50%;
+  padding-right: 5%;
+  box-sizing: border-box; /* Ensure padding doesn't affect width */
+}
+
+iframe {
+  flex: 1;
+  width: 50%;
+  height: 30vh;
+  box-sizing: border-box; 
+  margin-left: 5%;
+  border-radius: 30px;
+  border: 2px solid #33691e;
+}
+footer {
+  background-color:#33691e;
+  color:white;
+  display:flex;
+  align-items: center;
+  justify-content: space-around;
+  padding-top: 3%;
+  padding-bottom: 3%;
+}
+
+footer a {
+  color:white;
+  text-decoration: none;
+  font-family: 'Lato';
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.timeline {
+  padding-top: 5%;
+  background-color: #F6FDE7;
+}
+
+.Muppets {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  margin-top: 2%;
+  border-radius: 40px;
+  border: 2px solid #33691e;
+}
+
+.AboUsContainer {
+  background-color: #f8fce4;
+}
+
+.AboutInfo {
+    display: flex;
+    align-items: center;
+    display:flex;
+    justify-content: space-around;
+    padding-top: 5%;
+}
+
+.IDphoto {
+  max-width: 200px;
+  border: 1px solid #33691e;
+  border-radius: 40px;
+}
+
+.MeetUs {
+  padding-top: 5%;
+  text-align: center;
+  font-family: 'Lato';
+  font-size: min(calc(12px + 2vw), 30px); 
+  color: #0d2216; /* Or any other color you prefer */
+}
+
+.AboutInfo h1 {
+  font-size: min(calc(8px + 2vw), 25px);
+  font-family: 'Lato';
+  text-align: center;
+  padding-top: 2%;
+  padding-bottom: 2%;
+}
+.AboUsContainer {
+  padding-bottom: 5%;
+}
+
+.AboutInfo p {
+  font-size: min(calc(8px + 2vw), 16px);
+}
+
+.idContainer {
+  background-color: #5f9b45aa;
+  padding: 2%;
+  border-radius: 40px;
+}
+
+.FAQInfo {
+  display: flex;
+}
+
+.FAQsection {
+  flex: 1;
+  width: 50%;
+}
+
+.contactForm {
+  padding-left: 10%;
+  padding-top: 5%;
+  padding-bottom: 5%;
+  padding-right: 10%;
+}
+
+.contactUsContainer {
+  background-color: #F6FDE7;
+}
+
+.ContactTitle {
+  text-align: center;
+  font-family: 'Lato';
+  font-weight: 500;
+  color: #32651e;
+}
+
+.messageSuccess{
+  text-align: center;
+}
+
+.messageSuccess p {
+  font-family: 'Lato';
+  font-size: min(calc(8px + 2vw), 20px); 
+}
+
+.emailimage {
+  max-width: 200px;
+}
+
+.successContainer {
+  text-align: center;
+}
+
+.submitAgain {
+  margin-top: 5%;
+  background-color: #32651e;
+  padding-top: 1%;
+  padding-bottom: 1%;
+  padding-left: 1%;
+  padding-right: 1%;
+  font-family: 'Lato';
+  font-size: min(calc(5px + 2vw), 15px); 
+  border-radius: 10px;
+  display: inline-block;
+}
+
+a {
+  text-decoration:none;
+  color: white;
+}
